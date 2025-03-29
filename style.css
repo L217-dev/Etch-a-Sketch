@@ -1,0 +1,46 @@
+body{
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#line{
+    display: flex;
+    flex: 1;
+}
+
+.square {
+    flex: 1;
+    height: auto;
+    width: auto;
+    background-color: powderblue;
+}
+
+.button{
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+button{
+    padding: 12px 25px; /* Espaciado dentro del botón */
+    font-size: 16px; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
