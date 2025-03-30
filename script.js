@@ -39,31 +39,34 @@ function changeGridSize(){
         createGrid(newSize,newSize)
         paintSquare()
     }else {
-        return none
+        return alert("Max grid is 100")
     }
-
-    
- 
-    
 }
+
+function getRandomRgb() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
 
 function paintSquare(){
     document.querySelectorAll('.square').forEach(square => {
         square.addEventListener("mouseover", (e) => {
-            e.target.style.backgroundColor="white";
+            e.target.style.backgroundColor=getRandomRgb();
+            if (square.style.opacity <=0.9){
+                square.style.opacity=+square.style.opacity+0.1
+            }
         });
     });
 }
 
 function resetColor(){
     document.querySelectorAll('.square').forEach(square => {
-        square.style.backgroundColor="powderblue"
+        square.style.backgroundColor="white";
+        square.style.opacity=""
     })
 }
-
-
-
-
 
 createGrid(16,16)
 paintSquare()

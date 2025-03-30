@@ -1,17 +1,18 @@
 body{
-    background-color: silver;
+    background-color:cornsilk;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 20px;
 
 }
 
 #container{
     display: flex;
     flex-direction: column;
-    height: 900px;
-    width: 900px;
-    margin: 0 auto;
+    height: 700px;
+    width: 701px;
+    margin: 20px auto;
+    border: 5px solid 
 }
 
 #line{
@@ -23,12 +24,13 @@ body{
     flex: 1;
     height: auto;
     width: auto;
-    background-color: powderblue;
+    background-color: white;
+    
 }
 
 .button{
     display: flex;
-    width: 900px;
+    width: 700px;
     margin: 0 auto;
     justify-content: center;
     gap: 30px;
